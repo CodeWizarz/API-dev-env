@@ -1,6 +1,7 @@
 <template>
   <div>
-    <header
+    <!-- Header wrapper below -->
+    <header   
       class="flex items-center justify-between flex-1 flex-shrink-0 px-2 py-2 space-x-2 overflow-x-auto overflow-y-hidden"
     >
       <div
@@ -15,16 +16,16 @@
           :label="t('app.name')"
           to="/"
         />
-        <!-- <AppGitHubStarButton class="mt-1.5 transition" /> -->
+        <AppGitHubStarButton class="mt-1.5 transition" />
       </div>
       <div class="inline-flex items-center space-x-2">
-        <HoppButtonSecondary
+        <!-- <HoppButtonSecondary
           v-tippy="{ theme: 'tooltip', allowHTML: true }"
           :title="`${t('app.search')} <kbd>/</kbd>`"
           :icon="IconSearch"
           class="rounded hover:bg-primaryDark focus-visible:bg-primaryDark"
           @click="invokeAction('modals.search.toggle')"
-        />
+        /> -->
         <HoppButtonSecondary
           v-if="showInstallButton"
           v-tippy="{ theme: 'tooltip' }"

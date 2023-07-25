@@ -471,7 +471,7 @@ const copyShareLink = (shareLink: string) => {
     const time = new Date().toLocaleTimeString()
     const date = new Date().toLocaleDateString()
     navigator.share({
-      title: "Hoppscotch",
+      title: "Nexus",
       text: `Hoppscotch • Open source API development ecosystem at ${time} on ${date}`,
       url: link,
     })

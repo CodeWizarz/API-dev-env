@@ -40,11 +40,11 @@
           theme="popover"
           :on-shown="() => tippyActions!.focus()"
         >
-          <HoppButtonSecondary
+          <!-- <HoppButtonSecondary
             :icon="IconLifeBuoy"
             class="!rounded-none"
             :label="`${t('app.help')}`"
-          />
+          /> -->
           <template #content="{ hide }">
             <div
               ref="tippyActions"
@@ -252,7 +252,7 @@ const nativeShare = () => {
   if (navigator.share) {
     navigator
       .share({
-        title: "Hoppscotch",
+        title: "Nexus",
         text: "Hoppscotch • Open source API development ecosystem - Helps you create requests faster, saving precious time on development.",
         url: "https://hoppscotch.io",
       })
