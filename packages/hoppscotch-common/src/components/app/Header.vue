@@ -1,7 +1,6 @@
 <template>
   <div>
-    <!-- Header wrapper below -->
-    <header   
+    <header
       class="flex items-center justify-between flex-1 flex-shrink-0 px-2 py-2 space-x-2 overflow-x-auto overflow-y-hidden"
     >
       <div
@@ -237,7 +236,7 @@ import IconDownload from "~icons/lucide/download"
 import IconUploadCloud from "~icons/lucide/upload-cloud"
 import IconUserPlus from "~icons/lucide/user-plus"
 import IconLifeBuoy from "~icons/lucide/life-buoy"
-import IconSearch from "~icons/lucide/search"
+// import IconSearch from "~icons/lucide/search"
 import { breakpointsTailwind, useBreakpoints, useNetwork } from "@vueuse/core"
 import { pwaDefferedPrompt, installPWA } from "@modules/pwa"
 import { platform } from "~/platform"
